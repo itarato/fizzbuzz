@@ -97,6 +97,29 @@ for (var i = 1; i <= 100; i++) {
 
 ```
 
+#Language lolcode
+
+```lolcode
+HAI 1.2
+  CAN HAS STDIO?
+
+  IM IN YR LOOP UPPIN YR INDEX TIL BOTH SAEM INDEX AN 101
+    BOTH SAEM 0 AN MOD OF INDEX AN 15
+    O RLY?
+      YA RLY
+        VISIBLE "fizzbuzz"
+      MEBBE BOTH SAEM 0 MOD OF INDEX AN 3
+        VISIBLE "fizz"
+      MEBBE BOTH SAEM 0 MOD OF INDEX AN 5
+        VISIBLE "buzz"
+      NO WAI
+        VISIBLE INDEX
+    OIC
+  IM OUTTA YR LOOP
+KTHXBYE
+
+```
+
 #Language php
 
 ```php
