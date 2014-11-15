@@ -15,6 +15,7 @@ func main() {
 
 	file, _ := os.Open(path)
 	dirInfos, _ := file.Readdir(0)
+	regexp, _ := regexp.Compile(".*\\.class")
 	for _, dirInfo := range dirInfos {
 		if !dirInfo.IsDir() || dirInfo.Name() == ".git" {
 			continue
@@ -25,7 +26,6 @@ func main() {
 		languageFolder, _ := os.Open(path + dirInfo.Name() + "/")
 		languageFileList, _ := languageFolder.Readdir(0)
 		for _, languageFileInfo := range languageFileList {
-			regexp, _ := regexp.Compile(".*\\.class")
 			if regexp.MatchString(languageFileInfo.Name()) {
 				continue
 			}
