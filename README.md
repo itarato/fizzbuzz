@@ -1,9 +1,9 @@
 FizzBuzz implementations
 ========================
 
-#Language golang
+#Language go
 
-```golang
+```go
 package main
 
 import (
