@@ -4,27 +4,35 @@ FizzBuzz implementations
 #Language brainfuck
 
 ```brainfuck
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ f
->+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ i
->++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ z
->++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ b
->+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ u
->++++++++++ lf
-
->
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ set loop num
-
-> leave 0 for exit flag
-
->
-+++ set cycle num
-
->>>>
-+++++ set second cycle num
-<<<<
-
-<< back to cycle
++++++ +++++ init vars
 [
+  >++++ minus
+  >+++++ +++++ f
+  >+++++ +++++ i
+  >+++++ +++++ ++ z
+  >+++++ +++++ b
+  >+++++ +++++ ++ u
+  >+ lf
+  >+++++ +++++ loop 100
+  <<<<< <<<-
+]
+
+>+++++ else (minus)
+>++ f
+>+++++ i
+>++ z
+>-- b
+>--- u
+
+>>>>>
++++ set cycle num to 3
+>>>>
++++++ set second cycle num to 5
+
+<<<<< << back to cycle
+[
+  >+ set else flag (when no cycle is zero)
+
   >> cycle check
   [
     - decrement cycle num
@@ -37,8 +45,8 @@ FizzBuzz implementations
 
     >> check if zero flag is on
     [
-      <<<<<<<<<<.>.>..>>>>>>>> fizz
-
+      <<<<< <<<<< <.>.>..>>>>> >>>> fizz
+      <<<<[-]>>>> remove else flags
       <<+++>> restore cycle number
       [-]<[-] zero the flags
     ]
@@ -58,19 +66,26 @@ FizzBuzz implementations
 
     >> check if zero flag is on
     [
-      <<<<<<<<<<<.>.<<..>>>>>>>>>>>> buzz
-
+      <<<<< <<<<< <<.>.<<..>>>>> >>>>> >>> buzz
+      <<<<< <<<[-]>>>>> >>> remove else flags
       <<+++++>> restore cycle number
       [-]<[-] zero the flags
     ]
     < back to cycle num
     < back to exit flag
   ]
-  <<<<
+  <<<<< < back to loop
 
-  <<.>> new line
+  > if no fizz or buzz then minus
+  [
+    <<<<< <<<.>>>>> >>> else sign
+    [-]
+  ]
+  <
 
-  <-
+  <.> new line
+
+  - decrement loop
 ]
 
 ```
