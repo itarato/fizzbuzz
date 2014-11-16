@@ -1,7 +1,11 @@
 FizzBuzz implementations
 ========================
 
-#Language brainfuck
+From Wikipedia (http://en.wikipedia.org/wiki/Fizz_buzz): "Another variation is to replace numbers divisible by 3 with "Fizz", numbers divisible by 5 with "Buzz" (as per the original), but in addition, replace numbers divisible by both 3 and 5 with "FizzBuzz". It would produce something as follows."
+
+Output: ```1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22...```
+
+#Language BRAINFUCK
 
 ```brainfuck
 +++++ +++++ init vars
@@ -90,7 +94,7 @@ FizzBuzz implementations
 
 ```
 
-#Language c
+#Language C
 
 ```c
 #include <stdio.h>
@@ -115,7 +119,7 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-#Language cpp
+#Language CPP
 
 ```cpp
 #include <iostream>
@@ -140,7 +144,7 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-#Language go
+#Language GO
 
 ```go
 package main
@@ -174,13 +178,13 @@ func main() {
 
 ```
 
-#Language haskell
+#Language HASKELL
 
 ```haskell
 foldl (\acc x -> acc ++ " " ++ x) "" [if mod x 15 == 0 then "fizzbuzz" else if mod x 3 == 0 then "fizz" else if mod x 5 == 0 then "buzz" else show x | x <- [1..100]]
 ```
 
-#Language java
+#Language JAVA
 
 ```java
 public class Main {
@@ -209,7 +213,7 @@ public class Main {
 
 ```
 
-#Language javascript
+#Language JAVASCRIPT
 
 ```javascript
 'use strict';
@@ -236,7 +240,7 @@ for (var i = 1; i <= 100; i++) {
 
 ```
 
-#Language lolcode
+#Language LOLCODE
 
 ```lolcode
 HAI 1.2
@@ -259,7 +263,7 @@ KTHXBYE
 
 ```
 
-#Language objectivec
+#Language OBJECTIVEC
 
 ```objectivec
 #import <Foundation/Foundation.h>
@@ -285,7 +289,7 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-#Language php
+#Language PHP
 
 ```php
 <?php
@@ -310,7 +314,7 @@ for ($i = 1; $i <= 100; $i++) {
 
 ```
 
-#Language python
+#Language PYTHON
 
 ```python
 for i in range(1, 101):
@@ -328,7 +332,7 @@ for i in range(1, 101):
   print(out)
 ```
 
-#Language ruby
+#Language RUBY
 
 ```ruby
 (1..100).each { |i|
@@ -342,7 +346,7 @@ for i in range(1, 101):
 }
 ```
 
-#Language swift
+#Language SWIFT
 
 ```swift
 (1...101).map {
