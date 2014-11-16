@@ -13,7 +13,7 @@ var path = "./"
 func main() {
 	fmt.Println("FizzBuzz implementations")
 	fmt.Println("========================\n")
-	fmt.Println("From Wikipedia (http://en.wikipedia.org/wiki/Fizz_buzz): \"Another variation is to replace numbers divisible by 3 with \"Fizz\", numbers divisible by 5 with \"Buzz\" (as per the original), but in addition, replace numbers divisible by both 3 and 5 with \"FizzBuzz\". It would produce something as follows.\"\n")
+	fmt.Println("From Wikipedia (http://en.wikipedia.org/wiki/Fizz_buzz): \"*Another variation is to replace numbers divisible by 3 with \"Fizz\", numbers divisible by 5 with \"Buzz\" (as per the original), but in addition, replace numbers divisible by both 3 and 5 with \"FizzBuzz\". It would produce something as follows.*\"\n")
 	fmt.Println("Output: \n```\n1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz, Fizz, 22...\n```\n")
 
 	file, _ := os.Open(path)

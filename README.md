@@ -1,7 +1,7 @@
 FizzBuzz implementations
 ========================
 
-From Wikipedia (http://en.wikipedia.org/wiki/Fizz_buzz): "Another variation is to replace numbers divisible by 3 with "Fizz", numbers divisible by 5 with "Buzz" (as per the original), but in addition, replace numbers divisible by both 3 and 5 with "FizzBuzz". It would produce something as follows."
+From Wikipedia (http://en.wikipedia.org/wiki/Fizz_buzz): "*Another variation is to replace numbers divisible by 3 with "Fizz", numbers divisible by 5 with "Buzz" (as per the original), but in addition, replace numbers divisible by both 3 and 5 with "FizzBuzz". It would produce something as follows.*"
 
 Output: 
 ```
